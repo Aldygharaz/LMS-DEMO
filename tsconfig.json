@@ -13,6 +13,7 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": [
         "./src/*"
@@ -24,5 +25,6 @@
         "./db/*"
       ]
     }
-  }
+  },
+  "include": ["api", "server", "contracts", "db", "src"]
 }
