@@ -1,5 +1,5 @@
-import { getDb } from "../api/queries/connection";
-import { hashPassword } from "../api/school/auth";
+import { getDb } from "../server/queries/connection";
+import { hashPassword } from "../server/school/auth";
 import {
   jadwal,
   kelas,
