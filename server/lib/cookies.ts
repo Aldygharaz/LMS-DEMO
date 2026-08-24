@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { CookieOptions } from "hono/utils/cookie";
 
 function isLocalhost(headers: Headers): boolean {

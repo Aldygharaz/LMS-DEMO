@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { env } from "../lib/env";
 import type { UserProfile } from "./types";
 

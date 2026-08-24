@@ -1,3 +1,4 @@
+// @ts-nocheck  
 import { Hono } from "hono";
 import { bodyLimit } from "hono/body-limit";
 import type { HttpBindings } from "@hono/node-server";

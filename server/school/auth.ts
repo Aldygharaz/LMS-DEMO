@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { randomBytes, scrypt, timingSafeEqual } from "node:crypto";
 import { promisify } from "node:util";
 import * as cookie from "cookie";

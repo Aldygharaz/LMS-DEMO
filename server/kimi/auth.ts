@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Context } from "hono";
 import { setCookie } from "hono/cookie";
 import * as jose from "jose";

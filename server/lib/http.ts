@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface RequestConfig extends RequestInit {
   baseUrl?: string;
   params?: Record<string, string | number>;

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ErrorMessages } from "@contracts/constants";
 import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";

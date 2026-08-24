@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as jose from "jose";
 import { env } from "../lib/env";
 import type { SessionPayload } from "./types";

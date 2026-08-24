@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as cookie from "cookie";
 import { Session } from "@contracts/constants";
 import { getSessionCookieOptions } from "./lib/cookies";

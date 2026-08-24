@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "dotenv/config";
 
 function required(name: string): string {

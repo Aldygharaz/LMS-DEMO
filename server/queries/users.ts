@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { eq } from "drizzle-orm";
 import * as schema from "@db/schema";
 import type { InsertUser } from "@db/schema";

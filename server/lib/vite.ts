@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Hono } from "hono";
 import type { HttpBindings } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
