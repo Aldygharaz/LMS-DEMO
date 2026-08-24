@@ -1,0 +1,17 @@
+<svg width="640" height="180" viewBox="0 0 640 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mark: transparent, light stroke, no background box -->
+  <path d="
+    M 116 42
+    C 116 42, 71 42, 71 59
+    C 71 72, 100 62, 100 73
+    C 100 92, 63 92, 63 92
+  "
+  stroke="#F5F5F5"
+  stroke-width="16.2"
+  stroke-linecap="square"
+  stroke-linejoin="round"
+  fill="none"/>
+
+  <!-- Wordmark -->
+  <text x="216" y="115" font-family="Poppins" font-weight="600" font-size="64" letter-spacing="1" fill="#F5F5F5">Sokara</text>
+</svg>

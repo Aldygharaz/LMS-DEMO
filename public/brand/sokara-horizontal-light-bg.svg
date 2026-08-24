@@ -1,0 +1,25 @@
+<svg width="640" height="180" viewBox="0 0 640 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c1c1c"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark container -->
+  <rect x="0" y="0" width="180" height="180" rx="38" fill="url(#bgGradient)"/>
+  <path d="
+    M 116 60
+    C 116 60, 71 60, 71 77
+    C 71 90, 100 80, 100 91
+    C 100 110, 63 110, 63 110
+  "
+  stroke="#EAEAEA"
+  stroke-width="16.2"
+  stroke-linecap="square"
+  stroke-linejoin="round"
+  fill="none"/>
+
+  <!-- Wordmark -->
+  <text x="216" y="115" font-family="Poppins" font-weight="600" font-size="64" letter-spacing="1" fill="#141414">Sokara</text>
+</svg>
