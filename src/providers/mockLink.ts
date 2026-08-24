@@ -104,7 +104,7 @@ const handlers: Record<string, (input?: any) => any> = {
   'admin.listPengguna': () => [...dummySiswaList, ...dummyGuruList].map(u => ({ ...u, role: 'name' in u && u.name.includes('Ahmad') ? 'guru' : 'siswa' })),
   'admin.presensiBulanan': () => ({ 
       summary: { totalHadir: 420, sakit: 12, izin: 10, alpa: 8 }, 
-      daily: Array.from({length: 30}).map((_, i) => ({ tanggal: \`2026-08-\${String(i+1).padStart(2,'0')}\`, hadir: Math.floor(Math.random() * 20) + 400 })) 
+      daily: Array.from({length: 30}).map((_, i) => ({ tanggal: `2026-08-${String(i+1).padStart(2,'0')}`, hadir: Math.floor(Math.random() * 20) + 400 })) 
   }),
   
   // --- GURU ---
@@ -173,7 +173,7 @@ const handlers: Record<string, (input?: any) => any> = {
 export const mockLink: TRPCLink<AppRouter> = () => {
   return ({ next, op }) => {
     return observable((observer) => {
-      console.log(\`[TRPC Mock] \${op.path}\`, op.input);
+      console.log(`[TRPC Mock] ${op.path}`, op.input);
       
       const handler = handlers[op.path];
       
@@ -184,11 +184,11 @@ export const mockLink: TRPCLink<AppRouter> = () => {
             observer.next({ result: { type: 'data', data } });
             observer.complete();
           } catch (err) {
-            console.error(\`[TRPC Mock Error] \${op.path}:\`, err);
+            console.error(`[TRPC Mock Error] ${op.path}:`, err);
             observer.error(err as any);
           }
         } else {
-          console.warn(\`[TRPC Mock] Unhandled endpoint: \${op.path}. Returning empty array.\`);
+          console.warn(`[TRPC Mock] Unhandled endpoint: ${op.path}. Returning empty array.`);
           // Fallback array aman untuk mencegah .length atau .map crash
           observer.next({ result: { type: 'data', data: [] } });
           observer.complete();
