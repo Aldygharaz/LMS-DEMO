@@ -34,9 +34,13 @@ const handlers: Record<string, (input: any) => any> = {
   'admin.deletePengumuman': () => ({ success: true }),
   'admin.presensiOverview': () => ({ totalHadir: 140, totalSakit: 5, totalIzin: 3, totalAlpa: 2, rasioHadir: 95 }),
   'admin.listKelas': () => [{ id: 1, nama: '10 IPA 1', waliKelasNama: 'Budi Santoso', totalSiswa: 30 }],
-  'admin.kelasDetail': () => ({ kelas: { id: 1, nama: '10 IPA 1', waliKelasNama: 'Budi Santoso' }, siswa: [{ id: 1, name: 'Andi Pratama', email: 'andi@sekolah.demo' }], mapel: dummyKelasMapel }),
+  'admin.kelasDetail': () => ({ kelas: { id: 1, nama: '10 IPA 1', waliKelasNama: 'Budi Santoso' }, siswaList: [{ id: 1, name: 'Andi Pratama', email: 'andi@sekolah.demo' }], pengampu: [], jadwalList: [{ id: 1, hari: 'Senin', jamMulai: '07:00', jamSelesai: '08:30', mapelNama: 'Matematika', guruNama: 'Budi Santoso' }] }),
   'admin.rekapKeuangan': () => ({ totalNominal: 5000000, lunasNominal: 4000000, menunggakNominal: 1000000, verifikasiNominal: 0, countTotal: 50, countLunas: 40, countMenunggu: 0, countBelum: 10, kolektibilitas: 80 }),
   'admin.tagihanList': () => [],
+  'admin.listHariLibur': () => [],
+  'admin.listKelasPengganti': () => [],
+  'admin.createHariLibur': () => ({ success: true }),
+  'admin.deleteHariLibur': () => ({ success: true }),
   
   // Guru
   'guru.myAssignments': () => [{ id: 1, judul: 'PR Aljabar', kelasNama: '10 IPA 1', mapelNama: 'Matematika', deadline: Date.now() + 86400000, createdAt: Date.now(), totalSiswa: 30, submittedCount: 15 }],
