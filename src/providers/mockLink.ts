@@ -14,6 +14,7 @@ const dummyKelasMapel = [
 
 const handlers: Record<string, (input: any) => any> = {
   'auth.me': () => currentUser,
+  'schoolAuth.me': () => currentUser,
   'schoolAuth.login': (input) => {
     let role = 'admin';
     if (input.email.includes('guru')) role = 'guru';
